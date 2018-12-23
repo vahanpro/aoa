@@ -1,0 +1,9 @@
+@import "./header.css";
+@import "./container.css"; 
+@import "./content.css";
+@import "./Sign.css";
+@import "./footer.css";
+
+.App {
+  text-align: center;
+}
