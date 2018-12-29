@@ -1,0 +1,62 @@
+
+.sign{
+  position: fixed;
+  top: 15%;
+  left: calc(50% - 277.5px);
+  z-index: 500;
+  width: 555px;
+  height: 595px;
+  background-color: #fff;
+  font-size: 18px;
+  color: grey;
+  border: 1px solid grey;
+  transition: all .3s ease-out;
+}
+
+.sign h1 {
+  color: #4B4B48;
+}
+
+
+form{
+  width: 370px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+.inputs{
+  margin-top: 60px;
+
+}
+
+.inputs input {
+  margin: 10px;
+  outline: none;
+  padding: 5px;
+  width: 370px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #C6C7C6;
+  box-shadow: 0 0px 1px rgba(0,0,1,0.25), 0 5px 20px rgba(0,0,0,0.22);
+  font-size: 18px;
+}
+.submit{
+  outline: none;
+  margin: 10px;
+  width: 370px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #C6C7C6;
+  background-color: #457938;
+  color: white;
+  font-size: 18px;
+}
+
+.forgot-pass {
+  display: flex;
+  justify-content: space-between
+}
+
+.forgot-pass  a{
+  font-size: 20px;
+  display: flex;
+}

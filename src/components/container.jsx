@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import avatar from "./img/avatar.png";
-import left from "./img/leftarrow.png"
-import right from "./img/arrowright.png"
-import brushR from "./img/brushRight.png"
-import brushL from "./img/brushL.png"
+import avatar from "../img/avatar.png";
+import left from "../img/leftarrow.png"
+import right from "../img/arrowright.png"
+import brushR from "../img/brushRight.png"
+import brushL from "../img/brushL.png"
 
 class Container extends Component {
     render() { 

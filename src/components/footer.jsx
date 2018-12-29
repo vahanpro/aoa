@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
 
-const logoAOA = require('./img/AOA1.png');
-const earth = require('./assets/earth.svg');
-const arrowdown = require('./assets/ArrowDown.svg');
-const fb_icon = require('./assets/facebook_icon.svg');
-const yt_icon = require('./assets/youtube_icon.svg');
-const twitter_icon = require('./assets/twitter_icon.svg');
-const in_icon = require('./assets/linkedin_icon.svg');
+
+const logoAOA = require('../img/AOA1.png');
+const earth = require('../assets/earth.svg');
+const arrowdown = require('../assets/ArrowDown.svg');
+const fb_icon = require('../assets/facebook_icon.svg');
+const yt_icon = require('../assets/youtube_icon.svg');
+const twitter_icon = require('../assets/twitter_icon.svg');
+const in_icon = require('../assets/linkedin_icon.svg');
 
 class Footer extends Component {
   render() {

@@ -23,7 +23,8 @@
     text-decoration: none;
     font-family: Lato;
     font-size: 18pt;
-    transition: .2s
+    transition: .2s;
+    cursor: pointer;
 }
 
 .nav-bar a:hover {

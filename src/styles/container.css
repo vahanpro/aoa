@@ -34,16 +34,16 @@
 }
 
 .shadow1 {
-    background-image: url(./img/shadow1.png);
+    background-image: url(../img/shadow1.png);
     
 }
 
 .shadow2 {
-    background-image: url(./img/shadow2.png)
+    background-image: url(../img/shadow2.png)
 }
 
 .shadow3 {
-    background-image: url(./img/shadow3.png)
+    background-image: url(../img/shadow3.png)
 }
 
 .imgRow {
@@ -69,19 +69,19 @@
 
 
 .subOne {
-    background-image: url(./img/subOne.png);
+    background-image: url(../img/subOne.png);
 }
 
 .subTwo {
-    background-image: url(./img/subTwo.png)
+    background-image: url(../img/subTwo.png)
 }
 
 .subThree {
-    background-image: url(./img/subThree.png)
+    background-image: url(../img/subThree.png)
 }
 
 .subFour {
-    background-image: url(./img/subFour.png)
+    background-image: url(../img/subFour.png)
 }
 
 .browseBtn {
