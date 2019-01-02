@@ -1,5 +1,27 @@
 .container {
     width: 100%;
+    padding-bottom: 90px;
+    position: relative
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 323px;
+    height: 92px;
+    background:url('../img/brushL.png') no-repeat center;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 367px;
+    height: 161px;
+    background:url('../img/brushRight.png') no-repeat center;
 }
 
 .container h2 {
@@ -142,6 +164,7 @@
 }
 
 .arrows {
+    padding-top: 20px;
     display: flex;
     width: 720px;
     margin: auto;
@@ -168,4 +191,20 @@
 .arrow-right {
     margin-left: 15px;
     background-color: #457938;
+}
+
+.card {
+    position: relative;
+}
+
+
+
+.card:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 195px;
+    height: 110px;
+    background: url(/static/media/brushcard.c9f37283.png) no-repeat center;
 }
