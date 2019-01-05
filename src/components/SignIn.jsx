@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from "react";
 
 const SignIn = () => {
   return (
@@ -7,15 +6,14 @@ const SignIn = () => {
       <form onSubmit>
         <h1>Sign In</h1>
         <div className="inputs">
-        <input type="text" placeholder="    Username" />
-        <input type="password" placeholder="    Password" />
-        <input type="submit" value="Sign In" className="submit"/>
+          <input type="text" placeholder="    Username" />
+          <input type="password" placeholder="    Password" />
+          <input type="submit" value="Sign In" className="submit" />
         </div>
         <div className="forgot-pass">
-        <a href="#">Fogot Password?</a>
-        <a href="#">Sign Up Here</a>
+          <a href="#">Fogot Password?</a>
+          <a href="#">Sign Up Here</a>
         </div>
-       
       </form>
     </div>
   );

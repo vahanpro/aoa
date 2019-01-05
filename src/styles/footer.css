@@ -1,12 +1,8 @@
-
 .footer {
   width: 100%;
   background-color: rgb(245, 246, 245);
   display: inline-block;
 }
-
-
-
 
 .footerGrey {
   margin: 60px auto 40px;
@@ -16,7 +12,7 @@
 }
 
 .logo {
- margin: 0 auto;
+  margin: 0 auto;
 }
 
 .dropdown {
@@ -27,7 +23,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  box-shadow: -0.15px 1px 10px  #b4b4b4;
+  box-shadow: -0.15px 1px 10px #b4b4b4;
 }
 
 .logoaoa {
@@ -49,11 +45,10 @@
 .earth {
   height: 19px;
   width: 19px;
-  margin-left: 2px;;
+  margin-left: 2px;
 }
 
 .list {
-
   display: flex;
 }
 .arrowdown {
@@ -61,11 +56,11 @@
   width: 10px;
 }
 
-
 ul li {
   list-style-type: none;
   margin: 0px 50px 25px;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 ul li a {
@@ -92,6 +87,5 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(173, 191, 169)
+  color: rgb(173, 191, 169);
 }
-

@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Header from "./components/header"
-import './App.css';
-import Content from './components/content';
-import Container from "./components/container"
-import Footer from "./components/footer"
+import React, { Component } from "react";
+import Header from "./components/header";
+import "./App.css";
+import Content from "./components/content";
+import Container from "./components/container";
+import Footer from "./components/footer";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
         <Header />
         <Content />
         <Container />
-        <Footer/>
+        <Footer />
       </div>
     );
   }

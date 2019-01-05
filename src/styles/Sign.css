@@ -1,5 +1,4 @@
-
-.sign{
+.sign {
   position: fixed;
   top: 15%;
   left: calc(50% - 277.5px);
@@ -10,22 +9,20 @@
   font-size: 18px;
   color: grey;
   border: 1px solid grey;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .sign h1 {
-  color: #4B4B48;
+  color: #4b4b48;
 }
 
-
-form{
+form {
   width: 370px;
   margin: 0 auto;
   margin-top: 130px;
 }
-.inputs{
+.inputs {
   margin-top: 60px;
-
 }
 
 .inputs input {
@@ -35,17 +32,17 @@ form{
   width: 370px;
   height: 40px;
   border-radius: 30px;
-  border: 1px solid #C6C7C6;
-  box-shadow: 0 0px 1px rgba(0,0,1,0.25), 0 5px 20px rgba(0,0,0,0.22);
+  border: 1px solid #c6c7c6;
+  box-shadow: 0 0px 1px rgba(0, 0, 1, 0.25), 0 5px 20px rgba(0, 0, 0, 0.22);
   font-size: 18px;
 }
-.submit{
+.submit {
   outline: none;
   margin: 10px;
   width: 370px;
   height: 40px;
   border-radius: 30px;
-  border: 1px solid #C6C7C6;
+  border: 1px solid #c6c7c6;
   background-color: #457938;
   color: white;
   font-size: 18px;
@@ -53,10 +50,10 @@ form{
 
 .forgot-pass {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-.forgot-pass  a{
+.forgot-pass a {
   font-size: 20px;
   display: flex;
 }
@@ -66,7 +63,7 @@ form{
 }
 
 .modal-container:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
