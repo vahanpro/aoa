@@ -21,9 +21,10 @@
   color: #457938;
   text-decoration: none;
   font-family: Lato;
-  font-size: 18pt;
+  font-size: 18px;
   transition: 0.2s;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-bar a:hover {
@@ -53,6 +54,7 @@
   border-radius: 16px;
   border: 1.5px solid#457938;
   padding: 13px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-bar {

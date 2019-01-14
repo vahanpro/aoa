@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../styles/footer.css"
 
 const logoAOA = require("../img/AOA1.png");
 const earth = require("../assets/earth.svg");
@@ -17,10 +18,16 @@ class Footer extends Component {
             <div className="logo">
               <img src={logoAOA} className="logoaoa" alt="logo" />
             </div>
-            <div className="dropdown">
-              <img src={earth} className="earth" alt="earth-icon" />
-              <p>English</p>
-              <img src={arrowdown} className="arrowdown" alt="arrowdown" />
+            <div class="dropdown">
+              <button class="dropbtn">
+                <img src={earth} className="earth" alt="earth-icon" />
+                <p>English</p>
+                <img src={arrowdown} className="arrowdown" alt="arrowdown" />
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Հայերեն</a>
+                <a href="#">Русский</a>
+              </div>
             </div>
           </div>
           <div className="list">

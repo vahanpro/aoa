@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import avatar from "../img/avatar.png";
+import "../styles/container.css"
 import left from "../img/leftarrow.png";
 import right from "../img/arrowright.png";
 

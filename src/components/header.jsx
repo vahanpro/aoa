@@ -1,22 +1,40 @@
 import React, { Component } from "react";
 import AOA1 from "../img/AOA1.png";
-import Modal from "./signModal";
+import Modal from "./Modal";
+import "../styles/header.css";
+import SignIn from "./SignIn";
+import "../styles/Sign.css";
+import SignUp from "./SignUp";
 
 const search = require("../assets/search.svg");
 
 class Header extends Component {
   state = {
-    show: false
+    show: false,
+    showReg: false
   };
 
   showModal = () => {
-    this.setState(state => ({
-      show: !state.show
-    }));
+    this.setState({
+      show: true
+    });
+  };
+
+  showReg = () => {
+    this.setState({
+      showReg: true
+    });
+  };
+
+  closeAllModals = () => {
+    this.setState({
+      show: false,
+      showReg: false
+    });
   };
 
   render() {
-    const show = this.state.show;
+    const { show, showReg } = this.state;
     console.log(this.state.show);
     return (
       <div className="head">
@@ -30,10 +48,13 @@ class Header extends Component {
             <a href="#Courses">Programs</a>
             <a href="#Courses">Contact Us</a>
             <a onClick={this.showModal}>Sign in</a>
-            <Modal onClose={this.showModal} show={show} />
-            <a href="#Courses" className="regBtn">
+            <a onClick={this.showReg} href="#Courses" className="regBtn">
               Register
             </a>
+            <Modal onClose={this.closeAllModals} show={show || showReg}>
+              {show ? <SignIn /> : null}
+              {showReg ? <SignUp /> : null}
+            </Modal>
           </div>
         </div>
       </div>

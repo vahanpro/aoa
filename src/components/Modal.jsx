@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import SignIn from "./SignIn";
 
 class Modal extends Component {
   state = {
@@ -13,22 +12,23 @@ class Modal extends Component {
     }
   }
 
+  
+
   onClose = e => {
     this.setState({ fadeIn: false }, () => setTimeout(this.props.onClose, 300));
     document.body.style.overflow = "auto";
   };
 
   render() {
-    if (!this.props.show) {
-      return null;
-    }
     return (
       <div
-        className="modal-container"
+        className={
+          this.props.show || this.props.showReg ? "modal-container" : null
+        }
         style={{ opacity: this.state.fadeIn ? 1 : 0 }}
         onClick={this.onClose}
       >
-        <SignIn />
+        {this.props.children}
       </div>
     );
   }

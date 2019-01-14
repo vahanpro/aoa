@@ -4,11 +4,13 @@ import "./App.css";
 import Content from "./components/content";
 import Container from "./components/container";
 import Footer from "./components/footer";
+import Student from "./components/StuentProfile"
 
 class App extends Component {
   render() {
     return (
       <div>
+        {/* <Student/> */}
         <Header />
         <Content />
         <Container />

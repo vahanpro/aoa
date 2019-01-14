@@ -6,8 +6,8 @@ const SignIn = () => {
       <form onSubmit>
         <h1>Sign In</h1>
         <div className="inputs">
-          <input type="text" placeholder="    Username" />
-          <input type="password" placeholder="    Password" />
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" />
           <input type="submit" value="Sign In" className="submit" />
         </div>
         <div className="forgot-pass">
