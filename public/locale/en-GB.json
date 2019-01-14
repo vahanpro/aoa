@@ -1,0 +1,36 @@
+{
+  "header": {
+    "search": "Search ...",
+    "courses": "Courses",
+    "programs": "Programs",
+    "contact": "Contact",
+    "signIn": "Sign In",
+    "asTutor": "As Tutor",
+    "asStudent": "As Student",
+    "register": "Register",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPass": "Confirm Password",
+    "forgotPass": "Fogot Password?",
+    "registerHere": "Sign Up Here"
+  },
+
+  "container": {
+    "popularSubs": "Popular Subjects",
+    "computerScience": "Computer Science",
+    "languge": "Language",
+    "engineering": "Engineering",
+    "managment": "Managment",
+    "browseBtn": "Browse Courses and Programs",
+    "feedback": "What They Say"
+  },
+
+  "content": {
+    "title": "ONLINE LEARNING SYSTEM",
+    "slogan": "Online learning is not the next big thing, it is the now big thing. Learn anytime, anywhere.",
+    "findbtn": "What do you want to learn?",
+    "find": "Find Courses"
+  }
+}

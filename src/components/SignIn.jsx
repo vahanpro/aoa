@@ -1,22 +1,24 @@
 import React from "react";
+import { connectTranslations } from "../context/TranslationContext";
 
-const SignIn = () => {
+const SignIn = props => {
+  const { texts } = props;
   return (
     <div className="sign" onClick={e => e.stopPropagation()}>
       <form onSubmit>
-        <h1>Sign In</h1>
+        <h1>{texts.header.signIn}</h1>
         <div className="inputs">
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <input type="submit" value="Sign In" className="submit" />
+          <input type="text" placeholder= {texts.header.email} />
+          <input type="password" placeholder={texts.header.password} />
+          <input type="submit" value={texts.header.signIn} className="submit" />
         </div>
         <div className="forgot-pass">
-          <a href="#">Fogot Password?</a>
-          <a href="#">Sign Up Here</a>
+          <a href="#">{texts.header.forgotPass}</a>
+          <a href="#">{texts.header.registerHere}</a>
         </div>
       </form>
     </div>
   );
 };
 
-export default SignIn;
+export default connectTranslations(SignIn);

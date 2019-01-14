@@ -1,6 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans:400,400i,600,600i,700,700i,800');
+@import url("https://fonts.googleapis.com/css?family=Anton|Open+Sans:400,400i,600,600i,700,700i,800");
 .App {
   text-align: center;
+}
+
+.loading {
+  margin-top: 60px;
+  display: flex;
+}
+
+.loading img {
+  height: 20%;
+  width: 20%;
+  margin: 0 auto;
+  animation: rolling;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+}
+
+@keyframes rolling {
+  0% {
+  }
+  100% {
+    transform: rotate(720deg);
+  }
 }
 
 .modal-container {

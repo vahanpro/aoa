@@ -5,6 +5,8 @@ import "../styles/header.css";
 import SignIn from "./SignIn";
 import "../styles/Sign.css";
 import SignUp from "./SignUp";
+import { NavLink, Link } from "react-router-dom";
+import { connectTranslations } from "../context/TranslationContext";
 
 const search = require("../assets/search.svg");
 
@@ -35,21 +37,23 @@ class Header extends Component {
 
   render() {
     const { show, showReg } = this.state;
-    console.log(this.state.show);
+    const { texts } = this.props;
     return (
       <div className="head">
         <div className="navBar">
           <div className="img-logo">
-            <img src={AOA1} alt="AOA" className="logo" />
+            <Link to="/">
+              <img src={AOA1} alt="AOA" className="logo" />
+            </Link>
           </div>
           <div className="nav-bar">
-            <input className="search" type="search" placeholder="Search ..." />
-            <a href="#Courses">Courses</a>
-            <a href="#Courses">Programs</a>
-            <a href="#Courses">Contact Us</a>
-            <a onClick={this.showModal}>Sign in</a>
+            <input className="search" type="search" placeholder={texts.header.search} />
+            <NavLink to="/courses">{texts.header.courses}</NavLink>
+            <NavLink to="/programs">{texts.header.programs}</NavLink>
+            <NavLink to="/contact">{texts.header.contact}</NavLink>
+            <a onClick={this.showModal}>{texts.header.signIn}</a>
             <a onClick={this.showReg} href="#Courses" className="regBtn">
-              Register
+              {texts.header.register}
             </a>
             <Modal onClose={this.closeAllModals} show={show || showReg}>
               {show ? <SignIn /> : null}
@@ -62,4 +66,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default connectTranslations(Header);

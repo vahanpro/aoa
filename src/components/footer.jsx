@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "../styles/footer.css"
+import "../styles/footer.css";
+import { connectTranslations } from "../context/TranslationContext";
 
 const logoAOA = require("../img/AOA1.png");
 const earth = require("../assets/earth.svg");
@@ -25,8 +26,18 @@ class Footer extends Component {
                 <img src={arrowdown} className="arrowdown" alt="arrowdown" />
               </button>
               <div class="dropdown-content">
-                <a href="#">Հայերեն</a>
-                <a href="#">Русский</a>
+                <a
+                  href="javascript:void;"
+                  onClick={e => this.props.setLocale("hy-AM")}
+                >
+                  Հայերեն
+                </a>
+                <a
+                  href="javascript:void;"
+                  onClick={e => this.props.setLocale("en-GB")}
+                >
+                  English
+                </a>
               </div>
             </div>
           </div>
@@ -122,4 +133,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default connectTranslations(Footer);

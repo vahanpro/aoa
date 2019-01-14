@@ -1,21 +1,19 @@
 import React, { Component } from "react";
-import "../styles/content.css"
+import { connectTranslations } from "../context/TranslationContext";
+import "../styles/content.css";
 
 class Content extends Component {
   render() {
+    const { texts } = this.props;
     return (
       <div className="mainContent">
         <div className="about">
-          <h1>Online Learning System</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type.
-          </p>
-            <div className="searchCnt">
+          <h1>{texts.content.title}</h1>
+          <p>{texts.content.slogan}</p>
+          <div className="searchCnt">
             <div className="posRel">
-              <input type="search" placeholder="What do you want to learn?" />
-              <button className="posAbs">find courses</button>
+              <input type="search" placeholder={texts.content.findbtn}/>
+              <button className="posAbs">{texts.content.find}</button>
             </div>
           </div>
         </div>
@@ -24,4 +22,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default connectTranslations(Content);

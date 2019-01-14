@@ -1,23 +1,25 @@
 import React, { Component } from "react";
 import avatar from "../img/avatar.png";
-import "../styles/container.css"
+import "../styles/container.css";
 import left from "../img/leftarrow.png";
 import right from "../img/arrowright.png";
+import { connectTranslations } from "../context/TranslationContext";
 
 class Container extends Component {
   render() {
+    const { texts } = this.props;
     return (
       <div className="container">
-        <h2>Popular Subjects</h2>
+        <h2>{texts.container.popularSubs}</h2>
         <div className="imgRow">
           <div className="subOne subjects">
             <div className="shadow shadow1">
-              <h3>Computer Science</h3>
+              <h3>{texts.container.computerScience}</h3>
             </div>
           </div>
           <div className="subTwo subjects">
             <div className="shadow shadow2">
-              <h3>Language</h3>
+              <h3>{texts.container.language}</h3>
             </div>
           </div>
         </div>
@@ -25,22 +27,22 @@ class Container extends Component {
         <div className="imgRow">
           <div className="subThree subjects">
             <div className="shadow shadow3">
-              <h3>Engineering</h3>
+              <h3>{texts.container.engineering}</h3>
             </div>
           </div>
 
           <div className="subFour subjects">
             <div className="shadow shadow2">
-              <h3>Management</h3>
+              <h3>{texts.container.managment}</h3>
             </div>
           </div>
         </div>
         <div>
-          <button className="browseBtn">Browse Courses and Programs</button>
+          <button className="browseBtn">{texts.container.browseBtn}</button>
         </div>
 
         <div className="feedback">
-          <h2>What they say</h2>
+          <h2>{texts.container.feedback}</h2>
           <div className="card card-4">
             <div>
               <img src={avatar} alt="" />
@@ -70,4 +72,4 @@ class Container extends Component {
   }
 }
 
-export default Container;
+export default connectTranslations(Container);
