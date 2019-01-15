@@ -12,7 +12,7 @@ class Content extends Component {
           <p>{texts.content.slogan}</p>
           <div className="searchCnt">
             <div className="posRel">
-              <input type="search" placeholder={texts.content.findbtn}/>
+              <input type="search" placeholder={texts.content.findbtn} />
               <button className="posAbs">{texts.content.find}</button>
             </div>
           </div>

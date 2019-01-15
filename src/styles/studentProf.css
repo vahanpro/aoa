@@ -5,5 +5,15 @@
 
 .main-container {
     width: 835px;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container input {
+    padding-left: 15px;
+    width: 370px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    outline: none;
 }

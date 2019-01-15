@@ -7,12 +7,13 @@ import Container from "./components/container";
 import Footer from "./components/footer";
 import { Route } from "react-router-dom";
 import { connectTranslations } from "./context/TranslationContext";
-
+import Student from "./components/StuentProfile"
 
 class App extends Component {
   render() {
     return this.props.textLoaded ? (
       <div>
+        <Student/>
         <Header />
         <Route
           path="/"

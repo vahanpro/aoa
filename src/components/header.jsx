@@ -47,12 +47,18 @@ class Header extends Component {
             </Link>
           </div>
           <div className="nav-bar">
-            <input className="search" type="search" placeholder={texts.header.search} />
+            <input
+              className="search"
+              type="search"
+              placeholder={texts.header.search}
+            />
             <NavLink to="/courses">{texts.header.courses}</NavLink>
             <NavLink to="/programs">{texts.header.programs}</NavLink>
             <NavLink to="/contact">{texts.header.contact}</NavLink>
-            <a onClick={this.showModal}>{texts.header.signIn}</a>
-            <a onClick={this.showReg} href="#Courses" className="regBtn">
+            <NavLink to="/signIn" onClick={this.showModal}>
+              {texts.header.signIn}
+            </NavLink>
+            <a to="/signUp" onClick={this.showReg} className="regBtn">
               {texts.header.register}
             </a>
             <Modal onClose={this.closeAllModals} show={show || showReg}>
