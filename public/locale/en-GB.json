@@ -32,5 +32,19 @@
     "slogan": "Online learning is not the next big thing, it is the now big thing. Learn anytime, anywhere.",
     "findbtn": "What do you want to learn?",
     "find": "Find Courses"
-  }
+  },
+  "footer": {
+    "lang" : "English",
+    "about": "About Us",
+    "business": "AOA for Business",
+    "affiliates": "Affiliates",
+    "open": "Open AOA",
+    "term": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "accesibility": "Accessibility Policy",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "help": "Help Cneter",
+    "media": "Media Kit"
+  } 
 }

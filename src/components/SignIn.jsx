@@ -13,8 +13,8 @@ const SignIn = props => {
           <input type="submit" value={texts.header.signIn} className="submit" />
         </div>
         <div className="forgot-pass">
-          <a href="#">{texts.header.forgotPass}</a>
-          <a href="#">{texts.header.registerHere}</a>
+          <a href="javasript:void">{texts.header.forgotPass}</a>
+          <a href="javasript:void">{texts.header.registerHere}</a>
         </div>
       </form>
     </div>

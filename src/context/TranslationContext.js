@@ -15,7 +15,7 @@ class TranslationProvider extends Component {
 
   componentDidMount() {
     const locale =
-      window.localStorage.getItem("lang") !== null
+      window.localStorage.getItem("lang") === (('hy-AM') || ('en-GB'))
         ? window.localStorage.getItem("lang")
         : "en-GB";
     this.setLocale(locale);
