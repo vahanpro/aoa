@@ -8,7 +8,7 @@ import SignUp from "./SignUp";
 import { NavLink, Link } from "react-router-dom";
 import { connectTranslations } from "../context/TranslationContext";
 
-const search = require("../assets/search.svg");
+
 
 class Header extends Component {
   state = {
@@ -51,7 +51,7 @@ class Header extends Component {
             <NavLink to="/courses">{texts.header.courses}</NavLink>
             <NavLink to="/programs">{texts.header.programs}</NavLink>
             <NavLink to="/contact">{texts.header.contact}</NavLink>
-            <a onClick={this.showModal}>{texts.header.signIn}</a>
+            <a href="javasript:void" onClick={this.showModal}>{texts.header.signIn}</a>
             <a onClick={this.showReg} href="#Courses" className="regBtn">
               {texts.header.register}
             </a>

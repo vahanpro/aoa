@@ -12,6 +12,7 @@ const in_icon = require("../assets/linkedin_icon.svg");
 
 class Footer extends Component {
   render() {
+    const {texts} = this.props;
     return (
       <div className="footer">
         <div className="footerGrey">
@@ -19,21 +20,21 @@ class Footer extends Component {
             <div className="logo">
               <img src={logoAOA} className="logoaoa" alt="logo" />
             </div>
-            <div class="dropdown">
-              <button class="dropbtn">
+            <div className="dropdown">
+              <button className="dropbtn">
                 <img src={earth} className="earth" alt="earth-icon" />
-                <p>English</p>
+                <p>{texts.footer.lang}</p>
                 <img src={arrowdown} className="arrowdown" alt="arrowdown" />
               </button>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <a
-                  href="javascript:void;"
+                  href="javasript:void"
                   onClick={e => this.props.setLocale("hy-AM")}
                 >
                   Հայերեն
                 </a>
                 <a
-                  href="javascript:void;"
+                  href="javasricpt:void"
                   onClick={e => this.props.setLocale("en-GB")}
                 >
                   English
@@ -53,16 +54,16 @@ class Footer extends Component {
                 AOA
               </li>
               <li>
-                <a href="/#">About</a>
+                <a href="/#">{texts.footer.about}</a>
               </li>
               <li>
-                <a href="">AOA for Business</a>
+                <a href="javasript:void">{texts.footer.business}</a>
               </li>
               <li>
-                <a href="">Affiliates</a>
+                <a href="javasript:void">{texts.footer.affiliates}</a>
               </li>
               <li>
-                <a href="">Open AOA</a>
+                <a href="javasript:void">{texts.footer.open}</a>
               </li>
             </ul>
             <ul>
@@ -76,16 +77,13 @@ class Footer extends Component {
                 Legal
               </li>
               <li>
-                <a href="">Terms of Service </a>
+                <a href="javasript:void">{texts.footer.term} </a>
               </li>
               <li>
-                <a href="">Honor Code</a>
+                <a href="javasript:void">{texts.footer.privacy}</a>
               </li>
               <li>
-                <a href="">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="">Accessibility Policy</a>
+                <a href="javasript:void">{texts.footer.accesibility}</a>
               </li>
             </ul>
             <ul>
@@ -99,30 +97,30 @@ class Footer extends Component {
                 Connect
               </li>
               <li>
-                <a href="">Blog</a>
+                <a href="javasript:void">{texts.footer.blog}</a>
               </li>
               <li>
-                <a href="">Contact Us</a>
+                <a href="javasript:void">{texts.footer.contact}</a>
               </li>
               <li>
-                <a href="">Help Center</a>
+                <a href="javasript:void">{texts.footer.help}</a>
               </li>
               <li>
-                <a href="">Media Kit</a>
+                <a href="javasript:void">{texts.footer.media}</a>
               </li>
             </ul>
           </div>
           <div className="icons">
-            <a href="">
+            <a href="javasript:void">
               <img src={fb_icon} alt="icon" />
             </a>
-            <a href="">
+            <a href="javasript:void">
               <img src={yt_icon} alt="icon" />
             </a>
-            <a href="">
+            <a href="javasript:void">
               <img src={twitter_icon} alt="icon" />
             </a>
-            <a href="">
+            <a href="javasript:void">
               <img src={in_icon} alt="in-icon" />
             </a>
           </div>
