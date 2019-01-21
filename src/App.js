@@ -8,7 +8,6 @@ import Footer from "./components/footer";
 import { Route } from "react-router-dom";
 import { connectTranslations } from "./context/TranslationContext";
 import fire from "./config/Fire";
-import Student from "./components/StuentSettings";
 import StudentP from "./components/Student";
 import Courses from "./components/Courses";
 import Contact from './components/Contact'
@@ -43,7 +42,7 @@ class App extends Component {
           <StudentP />
         ) : (
           <>
-            {/* <Courses /> */}
+            <Courses />
             <Header />
             <Route
               path="/"
@@ -59,6 +58,7 @@ class App extends Component {
             <Footer />
           </>
         )}
+        
       </div>
     ) : (
       <div className="loading">

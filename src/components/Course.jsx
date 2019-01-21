@@ -4,13 +4,12 @@ import "../styles/course.css";
 class Course extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
+    console.log();
     this.state = {};
   }
   render() {
     console.log(this.props);
     return (
-      <div>
         <div className="course-card">
           <div
             style={{ background: `url(${this.props.details.image}` }}
@@ -21,7 +20,7 @@ class Course extends Component {
             </div>
           </div>
         </div>
-      </div>
+
     );
   }
 }

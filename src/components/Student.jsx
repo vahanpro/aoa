@@ -4,9 +4,15 @@ import "../styles/studentProfile.css"
 import Book from "../img/open-book.svg"
 import NoteBook from "../img/notebook.svg"
 import Male from "../img/male.svg"
+import fire from "../config/Fire"
 
 class Student extends Component {
     state = {  }
+
+    logout = () => {
+        fire.auth().signOut();
+    }
+
     render() { 
         return ( 
             <div>
@@ -23,6 +29,7 @@ class Student extends Component {
                         <div>
                             <img style={{width: "75px", height: "50px"}} src={Logo} alt="Logo"/>
                         </div>
+                        <button onClick = {this.logout}>Logout</button>
                     </div>
                 </div>
             </div>

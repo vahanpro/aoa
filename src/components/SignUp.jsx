@@ -1,12 +1,30 @@
 import React, { Component } from "react";
 import { connectTranslations } from "../context/TranslationContext";
 import "../styles/signUp.css";
+import fire from "../config/Fire";
 
 class SignUp extends Component {
   state = {
-    activeTutor: false
+    activeTutor: false,
+    email: "",
+    password: ""
   };
 
+  handleChange = e => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
+  };
+
+  signUp = e => {
+    e.preventDefault();
+    fire
+      .auth()
+      .createUserWithEmailAndPassword(this.state.email, this.state.password)
+      .then(u => {})
+      .catch(error => {
+        console.log(error);
+      });
+  };
   activateTutor = active => {
     this.setState(state => ({
       activeTutor: active
@@ -15,10 +33,10 @@ class SignUp extends Component {
 
   render() {
     const { texts } = this.props;
-    const { activeTutor } = this.state;
+    const { activeTutor, email, password } = this.state;
     return (
       <div className="signUp-main" onClick={e => e.stopPropagation()}>
-        <div className="btn-inp">
+        <form className="btn-inp">
           <div className="head">
             <h3>{texts.header.register}</h3>
           </div>
@@ -37,15 +55,29 @@ class SignUp extends Component {
               {texts.header.asTutor}
             </button>
           </div>
-          <div className="signUp-inputs">
+          <div className="signUp-inputsy">
             <input type="text" placeholder={texts.header.firstName} />
             <input type="text" placeholder={texts.header.lastName} />
-            <input type="text" placeholder={texts.header.email} />
-            <input type="password" placeholder={texts.header.password} />
+            <input
+              type="text"
+              onChange={this.handleChange}
+              name="email"
+              value={email}
+              placeholder={texts.header.email}
+            />
+            <input
+              type="password"
+              onChange={this.handleChange}
+              value={password}
+              name="password"
+              placeholder={texts.header.password}
+            />
             <input type="password" placeholder={texts.header.confirmPass} />
-            <button>{texts.header.register}</button>
+            <button type="submit" onClick={this.signUp}>
+              {texts.header.register}
+            </button>
           </div>
-        </div>
+        </form>
       </div>
     );
   }
