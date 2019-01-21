@@ -14,13 +14,15 @@
     "password": "Password",
     "confirmPass": "Confirm Password",
     "forgotPass": "Fogot Password?",
-    "registerHere": "Sign Up Here"
+    "registerHere": "Sign Up Here",
+    "message": "Your message",
+    "send": "Send"
   },
 
   "container": {
     "popularSubs": "Popular Subjects",
     "computerScience": "Computer Science",
-    "languge": "Language",
+    "language": "Language",
     "engineering": "Engineering",
     "managment": "Managment",
     "browseBtn": "Browse Courses and Programs",

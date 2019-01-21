@@ -100,7 +100,7 @@ class Footer extends Component {
                 <a href="javasript:void">{texts.footer.blog}</a>
               </li>
               <li>
-                <a href="javasript:void">{texts.footer.contact}</a>
+                <a href="/contact">{texts.footer.contact}</a>
               </li>
               <li>
                 <a href="javasript:void">{texts.footer.help}</a>

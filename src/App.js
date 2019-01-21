@@ -11,12 +11,13 @@ import fire from "./config/Fire";
 import Student from "./components/StuentSettings";
 import StudentP from "./components/Student";
 import Courses from "./components/Courses";
+import Contact from './components/Contact'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: {}
+      user: null
     };
   }
 
@@ -54,6 +55,7 @@ class App extends Component {
                 </>
               )}
             />
+            <Route path='/contact' component={Contact}/>
             <Footer />
           </>
         )}

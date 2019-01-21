@@ -12,8 +12,6 @@ class Modal extends Component {
     }
   }
 
-  
-
   onClose = e => {
     this.setState({ fadeIn: false }, () => setTimeout(this.props.onClose, 300));
     document.body.style.overflow = "auto";
