@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 import { Route } from "react-router-dom";
 import { connectTranslations } from "./context/TranslationContext";
 import fire from "./config/Fire";
-import Student from "./components/StuentSettings";
+import Student from "./components/StudentSettings";
 import StudentP from "./components/Student";
 import Courses from "./components/Courses";
 import Contact from './components/Contact'
