@@ -1,40 +1,76 @@
-import React, { Component } from 'react';
-import Logo from "../img/AOA1.png"
-import "../styles/studentProfile.css"
-import Book from "../img/open-book.svg"
-import NoteBook from "../img/notebook.svg"
-import Male from "../img/male.svg"
-import fire from "../config/Fire"
+import React, { Component } from "react";
+import Logo from "../img/AOA1.png";
+import "../styles/studentProfile.css";
+import Book from "../img/open-book.svg";
+import NoteBook from "../img/notebook.svg";
+import Male from "../img/male.svg";
+import fire from "../config/Fire";
+import { NavLink } from "react-router-dom";
+import User from "../user/User";
+import StudentSettings from "./StudentSettings";
 
 class Student extends Component {
-    state = {  }
+  state = {};
 
-    logout = () => {
-        fire.auth().signOut();
-    }
+  logout = () => {
+    fire.auth().signOut();
+  };
 
-    render() { 
-        return ( 
+  render() {
+    return (
+      <div>
+        <div className="std-header">
+          <div>
+            <img
+              src={Logo}
+              style={{ width: "75px", height: "50px" }}
+              alt="Logo"
+            />
+          </div>
+          <div className="page-nav">
+            <NavLink to="/courses">
+              <div>
+                <img src={Book} alt="book" /> Courses
+              </div>
+            </NavLink>
+            <NavLink to="/tutors">
+              <div>
+                <img src={Male} alt="book" /> Tutors
+              </div>
+            </NavLink>
+            <NavLink to="/mycourses">
+              <div>
+                <img src={NoteBook} alt="book" /> My Courses
+              </div>
+            </NavLink>
+          </div>
+          <User />
+          <div>
             <div>
-                <div className="std-header">
-                    <div>
-                        <img src={Logo} style={{width: "75px", height: "50px"}} alt="Logo"/>
-                    </div>
-                    <div className ="page-nav">
-                        <div><img src={Book} alt="book"/> Courses</div>
-                        <div><img src={Male} alt="book"/> Tutors</div>
-                        <div><img src={NoteBook} alt="book"/> My courses</div>
-                    </div>
-                    <div>
-                        <div>
-                            <img style={{width: "75px", height: "50px"}} src={Logo} alt="Logo"/>
-                        </div>
-                        <button onClick = {this.logout}>Logout</button>
-                    </div>
+              <div className="dropdown">
+                <button className="dropbtn">
+                  <img
+                    style={{ width: "75px", height: "50px" }}
+                    src={Logo}
+                    alt="Logo"
+                  />
+                </button>
+                <div className="dropdown-content">
+                  <NavLink to="/" onClick={this.logout}>
+                    Log Out
+                  </NavLink>
+                  <NavLink to="/settings" component={StudentSettings}>
+                    Settings
+                  </NavLink>
                 </div>
+              </div>
             </div>
-         );
-    }
+            <button onClick={this.logout}>Logout</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
- 
+
 export default Student;
