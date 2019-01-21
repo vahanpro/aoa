@@ -1,0 +1,145 @@
+.mainProf {
+  width: 950px;
+  margin: 0 auto;
+  background: url(../img/Sign-Up.png);
+  border: 1px solid black;
+}
+
+.main-container {
+  width: 835px;
+  margin: 0 auto;
+}
+
+span {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputStyles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selectGender {
+    flex-direction: column;
+  }
+
+  .countryNcity {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .inputStyles input {
+    width: 40%;
+  }
+}
+
+.span {
+  width: 370px;
+}
+
+.inputStyles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputStyles input {
+  width: 370px;
+}
+
+.selectGender {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selects {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender button {
+  width: 175px;
+  border: none;
+  background-color: #fff;
+  color: green;
+  cursor: pointer;
+}
+
+.mainProf input,
+button,
+select {
+  box-shadow: 0 0px 1px rgba(0, 0, 1, 0.25), 0 5px 20px rgba(0, 0, 0, 0.22);
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  border: 1px solid #b7b7b7;
+  border-radius: 25px;
+  height: 40px;
+  margin-top: 20px;
+  outline: none;
+  color: #464a44;
+  font-weight: normal;
+}
+
+.mainProf input,
+select {
+  padding-left: 25px;
+}
+
+.mainProf span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-left: 25px;
+  color: #575656;
+}
+
+.span {
+  margin-top: 30px;
+}
+
+.selects select {
+  width: 125px;
+  text-align: center;
+}
+
+.day,
+.year {
+  text-align: center;
+  padding-left: 10px !important;
+}
+
+.day {
+  width: 95px;
+}
+
+.year {
+  width: 110px;
+}
+
+.selectCountry {
+  width: 100%;
+}
+
+.countryNcity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.saveBtn {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.saveBtn button {
+  width: 370px;
+  border: none;
+  color: #fff;
+  background-color: #457938;
+  cursor: pointer;
+}

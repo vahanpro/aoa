@@ -1,0 +1,27 @@
+.std-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #CEDCCB;
+}
+
+.page-nav {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.page-nav img {
+    width: 25px;
+    vertical-align: sub;
+}
+
+.std-courses {
+    background-color: grey;
+    width: 1150px;
+    height: 700px;
+    margin: 45px auto;
+}

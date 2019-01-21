@@ -1,0 +1,29 @@
+const courseList = {
+    course1: {
+        image: "/courseImg/subOne.png",
+        name: "Computer Science"
+    },
+    course2: {
+        image: "/courseImg/subTwo.png",
+        name: "Language"
+    },
+    course3: {
+        image: "/courseImg/subThree.png",
+        name: "Engineering"
+    },
+    course4: {
+        image: "/courseImg/subFour.png",
+        name: "Computer Science"
+    },
+    course5: {
+        image: "/courseImg/subOne.png",
+        name: "Computer Science"
+    },
+    course6: {
+        image: "/courseImg/subOne.png",
+        name: "Computer Science"
+    }
+
+}
+
+export default courseList;
