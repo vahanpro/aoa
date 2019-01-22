@@ -55,7 +55,7 @@ class SignUp extends Component {
               {texts.header.asTutor}
             </button>
           </div>
-          <div className="signUp-inputsy">
+          <div className="signUp-inputs">
             <input type="text" placeholder={texts.header.firstName} />
             <input type="text" placeholder={texts.header.lastName} />
             <input

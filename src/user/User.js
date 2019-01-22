@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 import Courses from '../components/Courses';
 import MyCourses from './MyCourses';
 import Tutor from './Tutor';
-import CourseInfo from './CourseInfo';
+import StudentSettings from "../components/StudentSettings"
 
 class User extends Component {
   render() {
@@ -11,7 +11,7 @@ class User extends Component {
       <div>
         <Route path ='/courses' component={Courses}/>
         <Route path ='/mycourses' component={MyCourses}/>
-        <Route path ='/mycourses:id' component={CourseInfo}/>
+        <Route path ="/settings" component = {StudentSettings}/>
         <Route path ='/tutors' component={Tutor}/>   
       </div>
     );

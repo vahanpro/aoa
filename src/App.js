@@ -43,7 +43,7 @@ class App extends Component {
           <StudentP />
         ) : (
           <>
-            <Courses />
+            {/* <Courses /> */}
             <Header />
             <Route
               path="/"

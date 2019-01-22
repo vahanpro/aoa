@@ -44,7 +44,6 @@ class Student extends Component {
               </div>
             </NavLink>
           </div>
-          <User />
           <div>
             <div>
               <div className="dropdown">
@@ -65,9 +64,9 @@ class Student extends Component {
                 </div>
               </div>
             </div>
-            <button onClick={this.logout}>Logout</button>
           </div>
         </div>
+        <User />
       </div>
     );
   }

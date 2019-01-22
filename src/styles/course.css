@@ -1,8 +1,13 @@
 .course {
-  margin: 0 auto;
+  margin: 45px auto;
    display: flex;
   flex-wrap: wrap;
   justify-content: center
+}
+
+a {
+  outline: none;
+  text-decoration: none;
 }
 
 .course-card {

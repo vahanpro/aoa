@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import MyCourse from "./MyCourse";
+import CourseList from "./MyCourseObj";
 
 class MyCourses extends Component {
   render() {
     return (
-      <div>
-        
+      <div className="std-mycourses">
+        {Object.keys(CourseList).map(course => (
+          <MyCourse key={course} details={CourseList[course]} />
+        ))}
       </div>
     );
   }
