@@ -7,6 +7,7 @@ class Course extends Component {
     console.log();
     this.state = {};
   }
+  
   render() {
     console.log(this.props);
     return (
