@@ -34,8 +34,8 @@ class StudentProfile extends Component {
             </div>
           </div>
           <div className="inputStyles">
-            <div className="span">
-              <span>Title</span>
+          <div className="span">
+              <span>Phone</span>
               <input type="text" />
             </div>
             <div className="span">
@@ -106,17 +106,6 @@ class StudentProfile extends Component {
               </div>
             </div>
           </div>
-          <div className="inputStyles">
-            <div className="span">
-              <span>Phone</span>
-              <input type="text" />
-            </div>
-            <div className="span">
-              <span>Email</span>
-              <input type="text" />
-            </div>
-          </div>
-
           <div className="saveBtn">
             <button>Save Changes</button>
           </div>

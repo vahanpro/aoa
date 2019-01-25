@@ -6,6 +6,7 @@ import NoteBook from "../img/notebook.svg";
 import Male from "../img/male.svg";
 import fire from "../config/Fire";
 import { NavLink } from "react-router-dom";
+import Footer from "./footer"
 import User from "../user/User";
 import StudentSettings from "./StudentSettings";
 
@@ -47,10 +48,10 @@ class Student extends Component {
           <div>
             <div>
               <div className="dropdown">
-                <button className="dropbtn">
+                <button>
                   <img
-                    style={{ width: "75px", height: "50px" }}
-                    src={Logo}
+                    
+                    src="https://charliemingles.files.wordpress.com/2008/11/student_girl3.jpg"
                     alt="Logo"
                   />
                 </button>
@@ -67,6 +68,7 @@ class Student extends Component {
           </div>
         </div>
         <User />
+        <Footer/>
       </div>
     );
   }

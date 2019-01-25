@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    max-width: 1200px;
 }
 
 .mycourse-card {
@@ -17,6 +17,7 @@
     height: 325px;
     box-shadow: 0 0 10px 2px rgba(13, 15, 19, 0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
     cursor: pointer;
+    transition: all .3s
 }
 
 .mycourse-card:hover p {

@@ -20,13 +20,13 @@ class Footer extends Component {
             <div className="logo">
               <img src={logoAOA} className="logoaoa" alt="logo" />
             </div>
-            <div className="dropdown">
+            <div className="lang-dropdown">
               <button className="dropbtn">
                 <img src={earth} className="earth" alt="earth-icon" />
                 <p>{texts.footer.lang}</p>
                 <img src={arrowdown} className="arrowdown" alt="arrowdown" />
               </button>
-              <div className="dropdown-content">
+              <div className="lang-dropdown-content">
                 <a
                   href="javasript:void"
                   onClick={e => this.props.setLocale("hy-AM")}

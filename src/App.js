@@ -12,6 +12,7 @@ import Student from "./components/StudentSettings";
 import StudentP from "./components/Student";
 import Courses from "./components/Courses";
 import Contact from './components/Contact'
+import SignUp from "./components/SignUp";
 
 class App extends Component {
   constructor(props) {
@@ -43,7 +44,6 @@ class App extends Component {
           <StudentP />
         ) : (
           <>
-            {/* <Courses /> */}
             <Header />
             <Route
               path="/"
@@ -56,6 +56,7 @@ class App extends Component {
               )}
             />
             <Route path='/contact' component={Contact}/>
+            <Route path = '/signUp' component= {SignUp}/>
             <Footer />
           </>
         )}

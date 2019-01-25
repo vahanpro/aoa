@@ -3,6 +3,12 @@
   text-align: center;
 }
 
+button {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .loading {
   margin-top: 60px;
   display: flex;
