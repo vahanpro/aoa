@@ -8,9 +8,7 @@ import Footer from "./components/footer";
 import { Route } from "react-router-dom";
 import { connectTranslations } from "./context/TranslationContext";
 import fire from "./config/Fire";
-import Student from "./components/StudentSettings";
-import StudentP from "./components/Student";
-import Courses from "./components/Courses";
+import StudentProfile from "./components/Student";
 import Contact from './components/Contact'
 import SignUp from "./components/SignUp";
 
@@ -41,7 +39,10 @@ class App extends Component {
     return this.props.textLoaded ? (
       <div>
         {this.state.user ? (
-          <StudentP />
+         <Route path="/courses" render ={<StudentProfile />}>
+              
+         </Route>
+                
         ) : (
           <>
             <Header />
