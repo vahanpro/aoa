@@ -16,7 +16,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: null
+      user: null,
+      userLoaded: false
     };
   }
 
@@ -28,15 +29,15 @@ class App extends Component {
     fire.auth().onAuthStateChanged(user => {
       if (user) {
         console.log(user);
-        this.setState({ user });
+        this.setState({ user, userLoaded: true });
       } else {
-        this.setState({ user: null });
+        this.setState({ user: null, userLoaded: true });
       }
     });
   }
 
   render() {
-    return this.props.textLoaded ? (
+    return this.props.textLoaded && this.state.userLoaded ? (
       <div>
         {this.state.user ? (
          <Route path="/courses" render ={<StudentProfile />}>
