@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import Footer from "./footer"
 import User from "../user/User";
 import StudentSettings from "./StudentSettings";
+import AllCourses from "./AllCourses"
 
 class Student extends Component {
   state = {};
@@ -69,6 +70,7 @@ class Student extends Component {
         </div>
         <User />
         <Footer/>
+        <AllCourses/>
       </div>
     );
   }

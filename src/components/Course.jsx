@@ -4,7 +4,6 @@ import "../styles/course.css";
 class Course extends Component {
   constructor(props) {
     super(props);
-    console.log();
     this.state = {};
   }
   

@@ -1,27 +1,28 @@
 import React, { Component } from "react";
 import Course from "./Course";
 import {database} from "../config/Fire"
-import Loading from "../img/Loading.svg"
+import Loading from "../img/loading.svg"
 
 class Courses extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      courseList: null
+      courseList: null,
+      allCourseList: null
     }
   }
 
   componentDidMount(){
     database.ref("/Courses").on("value", (snapshot) => {
       this.setState({
-        courseList: snapshot.val()
+        courseList: snapshot.val(),
       })
     })
+ 
   }
 
   render() {
     const {courseList} = this.state
-    
     return (
       <div className="std-courses">
       <div className="course">
