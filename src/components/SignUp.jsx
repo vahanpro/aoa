@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connectTranslations } from "../context/TranslationContext";
 import "../styles/signUp.css";
 import fire from "../config/Fire";
-import database from "../config/Fire";
 
 class SignUp extends Component {
   state = {
@@ -10,7 +9,8 @@ class SignUp extends Component {
     email: "",
     password: "",
     firstName: "",
-    lastName: ""
+    lastName: "",
+    type: '',
   };
 
   handleChange = e => {
@@ -18,16 +18,6 @@ class SignUp extends Component {
     this.setState({ [name]: value });
   };
 
-  signUp = e => {
-    e.preventDefault();
-    fire
-      .auth()
-      .createUserWithEmailAndPassword(this.state.email, this.state.password)
-      .then(u => {})
-      .catch(error => {
-        console.log(error);
-      });
-  };
 
   signUp = e => {
     e.preventDefault();
@@ -72,6 +62,7 @@ class SignUp extends Component {
           </div>
           <div className="headBtn">
             <button
+            type ="button"
               onClick={e => this.activateTutor(false)}
               className="studBtn"
               style={{ color: activeTutor ? "black" : "" }}
@@ -79,6 +70,7 @@ class SignUp extends Component {
               {texts.header.asStudent}
             </button>
             <button
+              type="button"
               onClick={e => this.activateTutor(true)}
               style={{ color: activeTutor ? "green" : "" }}
             >
