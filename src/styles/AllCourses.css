@@ -38,7 +38,20 @@
   text-align: right;
 }
 .p{
-  padding-left: 2px;
+  padding-left: 10px;
   font-weight: 400;
-  margin-top: -5px;
+  font-size: 17px;
+  text-decoration: underline;
+  margin-top: -7px
+}
+.allcourse-card button {
+  width: 100px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 50px;
+  color: #457938;
+  font-size: 16px
 }

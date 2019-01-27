@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import "../styles/course.css";
 
 class Course extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
- 
   render() {
     return (
         <div className="course-card" >

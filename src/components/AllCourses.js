@@ -8,6 +8,7 @@ class AllCourses extends Component {
   state = {
     allCourseList: null
   }
+
   componentDidMount() {
     database.ref( "/AllCourses").on("value", (snapshot) => {
       this.setState({
@@ -15,6 +16,7 @@ class AllCourses extends Component {
       })
     })
   }
+
   render() { 
     const {allCourseList} = this.state;
     return (

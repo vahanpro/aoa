@@ -18,7 +18,6 @@ class Courses extends Component {
         courseList: snapshot.val(),
       })
     })
- 
   }
  
   render() {
