@@ -25,7 +25,6 @@ class Courses extends Component {
     return (
       <div className="std-courses">
       <div className="course">
-
         {courseList === null? <img src={Loading} alt="Loading"/>: Object.keys(courseList).map(course => (
           <Course key={course} details={courseList[course]} />
         ))}

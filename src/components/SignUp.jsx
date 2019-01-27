@@ -25,7 +25,6 @@ class SignUp extends Component {
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
       .then(user => {
-        console.log(user.user.uid);
         fire
           .database()
           .ref("users/" + user.user.uid)
