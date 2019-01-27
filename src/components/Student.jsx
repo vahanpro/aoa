@@ -9,7 +9,6 @@ import { NavLink } from "react-router-dom";
 import Footer from "./footer"
 import User from "../user/User";
 import StudentSettings from "./StudentSettings";
-import AllCourses from "./AllCourses"
 
 class Student extends Component {
   state = {};
@@ -45,13 +44,13 @@ class Student extends Component {
                 <img src={NoteBook} alt="book" /> My Courses
               </div>
             </NavLink>
+            
           </div>
           <div>
             <div>
               <div className="dropdown">
                 <button>
                   <img
-                    
                     src="https://charliemingles.files.wordpress.com/2008/11/student_girl3.jpg"
                     alt="Logo"
                   />
@@ -70,7 +69,6 @@ class Student extends Component {
         </div>
         <User />
         <Footer/>
-        <AllCourses/>
       </div>
     );
   }

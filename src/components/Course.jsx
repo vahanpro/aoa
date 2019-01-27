@@ -6,10 +6,10 @@ class Course extends Component {
     super(props);
     this.state = {};
   }
-  
+ 
   render() {
     return (
-        <div className="course-card">
+        <div className="course-card" >
           <div
             style={{ background: `url(${this.props.details.image}` }}
             className="course-card-img"
