@@ -50,7 +50,6 @@ a {
 }
 
 .course-card:hover {
-
--moz-box-shadow: 11px 9px 61px -5px rgba(0,0,0,0.71);
-box-shadow: 11px 9px 61px -5px rgba(0,0,0,0.71);
+  -moz-box-shadow: 11px 9px 61px -5px rgba(0,0,0,0.71);
+  box-shadow: 11px 9px 61px -5px rgba(0,0,0,0.71);
 }

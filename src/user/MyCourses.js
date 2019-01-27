@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MyCourse from "./MyCourse";
 import CourseList from "./MyCourseObj";
+import '../styles/mycourses.css';
 
 class MyCourses extends Component {
   render() {

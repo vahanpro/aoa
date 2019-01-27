@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./components/header";
 import "./App.css";
-import Loading from "./img/Loading.svg";
+import Loading from "./img/loading.svg";
 import Content from "./components/content";
 import Container from "./components/container";
 import Footer from "./components/footer";
@@ -11,6 +11,8 @@ import fire from "./config/Fire";
 import StudentProfile from "./components/Student";
 import Contact from "./components/Contact";
 import SignUp from "./components/SignUp";
+import Courses from "./components/Courses";
+
 
 class App extends Component {
   constructor(props) {
@@ -56,6 +58,7 @@ class App extends Component {
             />
             <Route path="/contact" component={Contact} />
             <Route path="/signUp" component={SignUp} />
+            <Route path="/courses" component={Courses}/>
             <Redirect to ="/"/>
             <Footer />
           </>
