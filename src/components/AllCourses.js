@@ -22,7 +22,7 @@ class AllCourses extends Component {
     return (
       <div className="std-allcourse-card">
         {allCourseList === null ? <img src={Loading} alt="Loading"/> : Object.keys(allCourseList).map(allCourse => (
-        <AllCourse details={allCourseList[allCourse]} key={allCourse}/> ))}
+        <AllCourse details={allCourseList[allCourse]} id={allCourse} key={allCourse}/> ))}
       </div>
      );
   }

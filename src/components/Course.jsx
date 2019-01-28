@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../styles/course.css";
 
+
 class Course extends Component {
   render() {
     return (

@@ -1,0 +1,80 @@
+.about-course {
+    margin: 45px auto;
+    display: flex;
+    justify-content: center;
+    background: rgb(243, 242, 242);
+    width: 1060px;
+}
+
+.aboutcourse-img {
+    max-width: 100%;
+    margin: 20px;
+}
+
+.infoaboutcourse {
+    margin: auto 20px;
+    width: 600px;
+    float: left;
+}
+
+.aboutcourse-name {
+    font-size: 27px;
+    line-height: 41px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #457938;
+}
+
+.course-intro {
+    font-size: 21px;
+}
+
+.content-sidebar {
+    margin: 45px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.about-this-cours-content {
+    float: left;
+    background: rgb(243, 242, 242);
+    margin: auto 20px 0 0;
+}
+
+h2 {
+    margin: 35px;
+    color: #457938;
+}
+
+.about-this-cours-text{
+    margin: auto 60px 0 20px;
+    width: 700px;
+}
+
+.you-will-learn-texts {
+    margin: auto 60px 0 25px;
+    width: 700px;
+}
+
+.tutor {
+    font-size: 15px;
+    margin: 30px;
+}
+
+.about-cours-list {
+    width: 250px;
+    background: rgb(243, 242, 242);
+}
+
+.about-cours-list ul {
+    padding: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 250px;
+}
+
+.about-cours-list ul li {
+    border-bottom: 1px solid #c5c5c5;
+    margin: 5px 18px;
+    padding: 12px 12px;
+}
