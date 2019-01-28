@@ -24,17 +24,10 @@ class Courses extends Component {
     const {courseList} = this.state
     return (
       <div className="std-courses">
-<<<<<<< HEAD
-      <div className="course">
-        {courseList === null? <img src={Loading} alt="Loading"/>: Object.keys(courseList).map(course => (
-          <Course key={course} details={courseList[course]} />
-        ))}
-=======
         <div className="course">
           {courseList === null? <img src={Loading} alt="Loading"/>: Object.keys(courseList).map(course => (
           < NavLink key={course}   to="/allCourses"> <Course details={courseList[course]} /> </NavLink>
           ))}
->>>>>>> origin/suro
         </div>
       </div>
     );
