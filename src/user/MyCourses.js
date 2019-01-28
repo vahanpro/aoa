@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MyCourse from "./MyCourse";
+import { database } from "../config/Fire";
 import CourseList from "./MyCourseObj";
 
 class MyCourses extends Component {
