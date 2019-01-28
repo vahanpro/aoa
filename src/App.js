@@ -5,14 +5,14 @@ import Loading from "./img/loading.svg";
 import Content from "./components/content";
 import Container from "./components/container";
 import Footer from "./components/footer";
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import { connectTranslations } from "./context/TranslationContext";
 import fire from "./config/Fire";
-import Student from "./components/StudentSettings";
-import StudentP from "./components/Student";
-import Courses from "./components/Courses";
-import Contact from './components/Contact'
+import StudentProfile from "./components/Student";
+import Contact from "./components/Contact";
 import SignUp from "./components/SignUp";
+import Courses from "./components/Courses";
+
 
 class App extends Component {
   constructor(props) {
@@ -42,7 +42,7 @@ class App extends Component {
     return this.props.textLoaded && this.state.userLoaded ? (
       <div>
         {this.state.user ? (
-          <StudentP />
+          <StudentProfile />
         ) : (
           <>
             <Header />
@@ -56,12 +56,13 @@ class App extends Component {
                 </>
               )}
             />
-            <Route path='/contact' component={Contact}/>
-            <Route path = '/signUp' component= {SignUp}/>
+            <Route path="/contact" component={Contact} />
+            <Route path="/signUp" component={SignUp} />
+            <Route path="/courses" component={Courses}/>
+            <Redirect to ="/"/>
             <Footer />
           </>
         )}
-        
       </div>
     ) : (
       <div className="loading">

@@ -2,16 +2,15 @@ import React, { Component } from "react";
 import { connectTranslations } from "../context/TranslationContext";
 import "../styles/signUp.css";
 import fire from "../config/Fire";
-import database from "../config/Fire"
 
 class SignUp extends Component {
   state = {
     activeTutor: false,
     email: "",
     password: "",
-    firstName: '',
-    lastName: '',
-    
+    firstName: "",
+    lastName: "",
+    type: '',
   };
 
   handleChange = e => {
@@ -19,38 +18,31 @@ class SignUp extends Component {
     this.setState({ [name]: value });
   };
 
+
   signUp = e => {
     e.preventDefault();
     fire
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
-      .then(u => {})
+      .then(user => {
+        fire
+          .database()
+          .ref("users/" + user.user.uid)
+          .set({
+            firstName: this.state.firstName,
+            email: this.state.email,
+            lastName: this.state.lastName,
+            id: user.user.uid,
+            type: this.state.activeTutor ? "tutor" : "student"
+          });
+      })
       .catch(error => {
         console.log(error);
+        this.setState({
+          err: error.message
+        });
       });
   };
-
-  signUp=(e)=>{
-    e.preventDefault();
-    fire
-    .auth()
-    .createUserWithEmailAndPassword(this.state.email, this.state.password).then(user => {
-      console.log(user.user.uid);
-      fire.database().ref('users/' + user.user.uid).set({
-        firstName: this.state.firstName,
-        email: this.state.email,
-        lastName: this.state.lastName,
-        id: user.user.uid,
-
-      });
-    })
-    .catch(error => {
-      console.log(error);
-      this.setState({
-        err: error.message,
-        });
-    });
-}
 
   activateTutor = active => {
     this.setState(state => ({
@@ -69,6 +61,7 @@ class SignUp extends Component {
           </div>
           <div className="headBtn">
             <button
+            type ="button"
               onClick={e => this.activateTutor(false)}
               className="studBtn"
               style={{ color: activeTutor ? "black" : "" }}
@@ -76,6 +69,7 @@ class SignUp extends Component {
               {texts.header.asStudent}
             </button>
             <button
+              type="button"
               onClick={e => this.activateTutor(true)}
               style={{ color: activeTutor ? "green" : "" }}
             >
@@ -83,8 +77,18 @@ class SignUp extends Component {
             </button>
           </div>
           <div className="signUp-inputs">
-            <input onChange={this.handleChange} name="firstName" type="text" placeholder={texts.header.firstName} />
-            <input onChange={this.handleChange} name="lastName" type="text" placeholder={texts.header.lastName} />
+            <input
+              onChange={this.handleChange}
+              name="firstName"
+              type="text"
+              placeholder={texts.header.firstName}
+            />
+            <input
+              onChange={this.handleChange}
+              name="lastName"
+              type="text"
+              placeholder={texts.header.lastName}
+            />
             <input
               type="text"
               onChange={this.handleChange}

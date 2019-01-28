@@ -2,15 +2,17 @@ import React, { Component } from "react";
 import "../styles/course.css";
 
 class Course extends Component {
+<<<<<<< HEAD
   constructor(props) {
     super(props);
     this.state = {};
   }
   
+=======
+>>>>>>> origin/Arsen-dev
   render() {
-    console.log(this.props);
     return (
-        <div className="course-card">
+        <div className="course-card" >
           <div
             style={{ background: `url(${this.props.details.image}` }}
             className="course-card-img"

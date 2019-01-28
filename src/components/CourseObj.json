@@ -1,0 +1,330 @@
+{
+    "AllCourses": {
+        "course1": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course2": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course3": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course4": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course5": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course6": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course7": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },"course8": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course9": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course10": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course11": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course12": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course13": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course14": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course15": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course16": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course17": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course18": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course19": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course20": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course21": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course22": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+
+        
+        "course23": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course24": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course25": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course26": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course27": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course28": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course29": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course30": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course31": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course32": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course33": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course34": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course35": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        },
+        "course36": {
+            "image": "/courseImg/subOne.png",
+            "name": "JavaScript for beginners",
+            "price" : "30$",
+            "subject": "Computer Science",
+            "length" : "4 weeks",
+            "language": "Armenian",
+            "level" : "introduction"
+        }
+    }
+   
+}

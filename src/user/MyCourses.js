@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import MyCourse from "./MyCourse";
 import { database } from "../config/Fire";
 import CourseList from "./MyCourseObj";
+import '../styles/mycourses.css';
 
 class MyCourses extends Component {
   render() {

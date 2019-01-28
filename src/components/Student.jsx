@@ -44,13 +44,13 @@ class Student extends Component {
                 <img src={NoteBook} alt="book" /> My Courses
               </div>
             </NavLink>
+            
           </div>
           <div>
             <div>
               <div className="dropdown">
                 <button>
                   <img
-                    
                     src="https://charliemingles.files.wordpress.com/2008/11/student_girl3.jpg"
                     alt="Logo"
                   />
