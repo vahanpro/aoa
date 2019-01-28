@@ -6,6 +6,7 @@ class TranslationProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      initialTextLoaded: false,
       textLoaded: false,
       locale: "",
       setLocale: this.setLocale,
@@ -15,7 +16,7 @@ class TranslationProvider extends Component {
 
   componentDidMount() {
     const locale =
-      window.localStorage.getItem("lang") === (('hy-AM') || ('en-GB'))
+      window.localStorage.getItem("lang") === ("hy-AM" || "en-GB")
         ? window.localStorage.getItem("lang")
         : "en-GB";
     this.setLocale(locale);
@@ -28,7 +29,11 @@ class TranslationProvider extends Component {
       fetch(`/locale/${locale}.json`)
         .then(res => res.json())
         .then(json => {
-          this.setState({ textLoaded: true, texts: json });
+          this.setState({
+            textLoaded: true,
+            initialTextLoaded: true,
+            texts: json
+          });
         })
         .catch(ex => {
           this.setState({

@@ -8,6 +8,7 @@ import fire from "../config/Fire";
 import { NavLink } from "react-router-dom";
 import Footer from "./footer"
 import User from "../user/User";
+import {ConnectToUser} from "../context/ConnectUser"
 import StudentSettings from "./StudentSettings";
 
 class Student extends Component {
@@ -18,10 +19,12 @@ class Student extends Component {
   };
 
   render() {
+    console.log(this.props)
     return (
       <div>
         <div className="std-header">
           <div>
+            <p>{this.props.user.email}</p>
             <img
               src={Logo}
               style={{ width: "75px", height: "50px" }}
@@ -74,4 +77,4 @@ class Student extends Component {
   }
 }
 
-export default Student;
+export default ConnectToUser(Student);
