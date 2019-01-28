@@ -7,7 +7,7 @@ class MyCourses extends Component {
     return (
       <div className="std-mycourses">
         {Object.keys(CourseList).map(course => (
-          <MyCourse key={course} details={CourseList[course]} />
+            <MyCourse key={course} id={course} details={CourseList[course]} />
         ))}
       </div>
     );
