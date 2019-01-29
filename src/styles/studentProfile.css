@@ -5,6 +5,16 @@
   background-color: #cedccb;
 }
 
+.page-nav a {
+  color: rgb(102, 101, 101);
+  font-weight: 600;
+  transition: all .3s
+}
+
+.page-nav a:hover {
+  color: green;
+}
+
 .page-nav {
   width: 550px;
   display: flex;

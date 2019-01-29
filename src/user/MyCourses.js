@@ -1,36 +1,33 @@
 import React, { Component } from "react";
 import MyCourse from "./MyCourse";
-import { database } from "../config/Fire";
-import '../styles/mycourses.css';
+import "../styles/mycourses.css";
 import Loader from "../img/loading.svg";
-
+import { ConnectToUser } from "../context/ConnectUser";
 
 class MyCourses extends Component {
   constructor(props) {
     super(props);
-    this.state= {
-      CourseList: null
-    }
+    this.state = {
+      CourseList: props.user.course || []
+    };
   }
 
-  componentDidMount(){
-    database.ref("/AllCourses").on("value", (snapshot) => {
-      this.setState({
-        CourseList: snapshot.val(),
-      })
-    })
-  }
+  componentDidMount() {}
 
   render() {
-    const {CourseList} = this.state
+    const { CourseList } = this.state;
     return (
       <div className="std-mycourses">
-        {CourseList === null ? (<img src ={Loader} alt="Loading" />): Object.keys(CourseList).map(course => (
+        {CourseList === null ? (
+          <img src={Loader} alt="Loading" />
+        ) : (
+          Object.keys(CourseList).map(course => (
             <MyCourse key={course} id={course} details={CourseList[course]} />
-        ))}
+          ))
+        )}
       </div>
     );
   }
 }
 
-export default MyCourses;
+export default ConnectToUser(MyCourses);

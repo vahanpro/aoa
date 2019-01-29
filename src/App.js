@@ -7,16 +7,13 @@ import Container from "./components/container";
 import Footer from "./components/footer";
 import { Route, Redirect } from "react-router-dom";
 import { connectTranslations } from "./context/TranslationContext";
-import fire from "./config/Fire";
 import StudentProfile from "./components/Student";
 import Contact from "./components/Contact";
 import SignUp from "./components/SignUp";
-import {ConnectToUser} from "./context/ConnectUser"
+import { ConnectToUser } from "./context/ConnectUser";
 import Courses from "./components/Courses";
 
 class App extends Component {
-
-
   render() {
     return this.props.userIsLoaded && this.props.initialTextLoaded ? (
       <>
