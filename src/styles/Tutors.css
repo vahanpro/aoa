@@ -34,3 +34,39 @@
   font-size: 18px;
   font-weight: 500
 }
+
+
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+  height:0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background-color:#828282
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color:#004717;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+  background-color:#00D646;
+  
+  }
+  
+  ::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px;
+  }
+  
+  ::-webkit-scrollbar{
+  width: 10px;
+  }
+  

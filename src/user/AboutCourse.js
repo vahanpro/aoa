@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../styles/aboutCourse.css"
 import CourseList from "./MyCourseObj";
+import goBack from "../img/goBackIcon.svg";
+import {NavLink} from 'react-router-dom';
 
 class AboutCourse extends Component {
     constructor(props) {
@@ -12,6 +14,7 @@ class AboutCourse extends Component {
         const course = CourseList[this.props.match.params.id];
         return (
             <div>
+                <NavLink to="/allCourses"><div className="goBack"><img src={goBack} alt="goBack"/></div></NavLink>
                 <div className="about-course">
                     <div className="aboutcourse-img">
                         <img src={course.image} alt="logo"/>
