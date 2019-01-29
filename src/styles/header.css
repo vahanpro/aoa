@@ -57,6 +57,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+
+.nav-bar {
+  display: contents;
+}
+
 @media screen and (max-width: 1148px) {
   .search {
     width : 200px;
@@ -65,6 +70,7 @@
     margin-left : 35px;
   }
 }
+
 
 @media screen and (max-width: 960px) {
   .nav-bar a {
@@ -89,9 +95,5 @@
     width: 325px !important;
     margin: 0;
   }
-}
-
-.nav-bar {
-  display: contents;
 }
 /* Header End */
