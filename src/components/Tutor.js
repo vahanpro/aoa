@@ -18,7 +18,7 @@ class Tutor extends Component {
           <p>Subject: {subject}</p>
         </div>
         <div className="aboutTutor">
-          About Me:
+          <p>About Me</p>
           <p>{aboutme}</p>
         </div>
         

@@ -8,17 +8,17 @@ import {UserProvider} from "./context/ConnectUser"
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter>
-  <UserProvider>
-    <TranslationProvider>
-      
-      <App />
-    
-      
-    </TranslationProvider>
-    </UserProvider>
-  </BrowserRouter>,
-  document.getElementById("root")
+ <BrowserRouter>
+ <UserProvider>
+   <TranslationProvider>
+
+     <App />
+
+
+   </TranslationProvider>
+   </UserProvider>
+ </BrowserRouter>,
+ document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

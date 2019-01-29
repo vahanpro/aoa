@@ -24,7 +24,6 @@ class Student extends Component {
       <div>
         <div className="std-header">
           <div>
-            <p>{this.props.user.email}</p>
             <img
               src={Logo}
               style={{ width: "75px", height: "50px" }}
@@ -58,6 +57,8 @@ class Student extends Component {
                     alt="Logo"
                   />
                 </button>
+                <p>{this.props.user.firstName}</p>
+                <p>{this.props.user.lastName}</p>
                 <div className="dropdown-content">
                   <NavLink to="/" onClick={this.logout}>
                     Log Out
