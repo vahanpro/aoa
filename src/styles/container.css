@@ -143,6 +143,16 @@
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
+@media screen and (max-width: 1148px) {
+  .card-4 {
+    width: auto;
+  }
+
+  .arrows {
+    width: auto !important;
+  }
+}
+
 .about-user {
   width: 460px;
 }

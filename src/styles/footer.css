@@ -124,3 +124,36 @@ ul li a {
   align-items: center;
   color: rgb(173, 191, 169);
 }
+
+@media screen and (max-width: 1148px) {
+  .footerGrey {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .lang-dropdown{
+    display: flex;
+    justify-content: center;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  ul {
+    margin: 30px auto;
+  }
+
+  ul:nth-child(3) {
+    display: none;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+  }
+}

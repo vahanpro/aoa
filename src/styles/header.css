@@ -57,6 +57,39 @@
   font-family: "Open Sans", sans-serif;
 }
 
+@media screen and (max-width: 1148px) {
+  .search {
+    width : 200px;
+    height : 45px;
+    margin-top : 10px;
+    margin-left : 35px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav-bar a {
+    display: none;
+  } 
+
+  .imgRow {
+    display: block !important;
+  }
+
+  .subjects {
+    width : 100% !important;
+    height: 300px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shadow {
+    height: 180px !important;
+    width: 325px !important;
+    margin: 0;
+  }
+}
+
 .nav-bar {
   display: contents;
 }
