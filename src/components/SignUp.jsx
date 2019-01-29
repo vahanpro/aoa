@@ -10,7 +10,9 @@ class SignUp extends Component {
     password: "",
     firstName: "",
     lastName: "",
-    type: '',
+    type: "",
+    emailError: "",
+    passwordError: ""
   };
 
   handleChange = e => {
@@ -18,30 +20,55 @@ class SignUp extends Component {
     this.setState({ [name]: value });
   };
 
+  validate = () => {
+    let { emailError, passwordError } = this.state;
+
+    if (!this.state.email.includes("@")) {
+      emailError = "Pease, inslert correct email";
+    }
+
+    if (this.state.password.length < 6) {
+      passwordError = "It is less than 6 letters";
+    }
+
+    if (emailError || passwordError) {
+      this.setState({
+        emailError,
+        passwordError
+      });
+      return false;
+    }
+    return true;
+  };
 
   signUp = e => {
     e.preventDefault();
-    fire
-      .auth()
-      .createUserWithEmailAndPassword(this.state.email, this.state.password)
-      .then(user => {
-        fire
-          .database()
-          .ref("users/" + user.user.uid)
-          .set({
-            firstName: this.state.firstName,
-            email: this.state.email,
-            lastName: this.state.lastName,
-            id: user.user.uid,
-            type: this.state.activeTutor ? "tutor" : "student"
+    const isValid = this.validate();
+    if (isValid) {
+      fire
+        .auth()
+        .createUserWithEmailAndPassword(this.state.email, this.state.password)
+        .then(user => {
+          fire
+            .database()
+            .ref("users/" + user.user.uid)
+            .set({
+              firstName: this.state.firstName,
+              email: this.state.email,
+              lastName: this.state.lastName,
+              id: user.user.uid,
+              type: this.state.activeTutor ? "tutor" : "student"
+            });
+        })
+        .catch(error => {
+          console.log(error);
+          this.setState({
+            err: error.message
           });
-      })
-      .catch(error => {
-        console.log(error);
-        this.setState({
-          err: error.message
         });
-      });
+    } else {
+      console.log(this.state);
+    }
   };
 
   activateTutor = active => {
@@ -61,7 +88,7 @@ class SignUp extends Component {
           </div>
           <div className="headBtn">
             <button
-            type ="button"
+              type="button"
               onClick={e => this.activateTutor(false)}
               className="studBtn"
               style={{ color: activeTutor ? "black" : "" }}
@@ -96,6 +123,7 @@ class SignUp extends Component {
               value={email}
               placeholder={texts.header.email}
             />
+            <div>{this.state.emailError}</div>
             <input
               type="password"
               onChange={this.handleChange}
@@ -103,6 +131,7 @@ class SignUp extends Component {
               name="password"
               placeholder={texts.header.password}
             />
+            <div>{this.state.passwordError}</div>
             <input type="password" placeholder={texts.header.confirmPass} />
             <button type="submit" onClick={this.signUp}>
               {texts.header.register}
